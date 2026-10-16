@@ -58,12 +58,21 @@ function ProjectLinks({ links }) {
 
 function Project({ p }) {
   const planned = p.status === "planned";
-  const classes = ["project", p.featured && "project--featured", planned && "project--planned"].filter(Boolean).join(" ");
+  // Only a real image, or a visible placeholder, counts as media. Without this
+  // the featured card keeps an empty dark half where the image would go.
   const media = p.image ? (
     <img className="project__image" src={p.image} alt={p.imageAlt || ""} loading="lazy" />
-  ) : (
-    !planned && <Unmapped className="project__image-empty">add a screenshot, GIF or short demo video</Unmapped>
-  );
+  ) : SHOW_PLACEHOLDERS && !planned ? (
+    <Unmapped className="project__image-empty">add a screenshot, GIF or short demo video</Unmapped>
+  ) : null;
+  const classes = [
+    "project",
+    p.featured && "project--featured",
+    p.featured && !media && "project--no-media",
+    planned && "project--planned",
+  ]
+    .filter(Boolean)
+    .join(" ");
 
   return (
     <article className={classes}>

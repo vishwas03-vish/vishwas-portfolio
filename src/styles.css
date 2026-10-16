@@ -394,6 +394,10 @@ img {
   grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
 }
 
+.project--featured.project--no-media {
+  grid-template-columns: 1fr;
+}
+
 .project--planned {
   background: repeating-linear-gradient(-45deg, transparent 0 7px, rgba(0, 0, 0, 0.09) 7px 8px),
     var(--unknown);
