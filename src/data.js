@@ -39,6 +39,14 @@ export const projects = [
     summary:
       "V–M.I.T.R.A is a smart virtual robotics laboratory that connects an interactive learning platform with ROS 2 and simulation tools, enabling students to learn, execute, and analyze robotics experiments in a guided environment.",
     role: "Team lead, 4 members",
+    highlights: [
+      "SLAM mapping",
+      "Autonomous navigation",
+      "Obstacle avoidance",
+      "LiDAR integration",
+      "TurtleBot simulation",
+      "AI-assisted debugging",
+    ],
     image: null,
     stack: [
       "ROS 2 Jazzy",
