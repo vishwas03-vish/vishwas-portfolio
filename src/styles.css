@@ -697,6 +697,10 @@ img {
   font-weight: 600;
   padding-top: 0.3rem;
 }
+.entry__event {
+  color: var(--ink-2);
+  margin-bottom: 0.4rem;
+}
 
 .certs {
   list-style: none;

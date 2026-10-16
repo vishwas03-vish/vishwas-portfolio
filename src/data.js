@@ -35,7 +35,7 @@ export const projects = [
     featured: true,
     name: "V-M.I.T.R.A",
     fullName: "Virtual Mentor for Intelligent Technical and Robotics Analysis",
-    status: "in-progress",
+    status: "done",
     summary:
       "V–M.I.T.R.A is a smart virtual robotics laboratory that connects an interactive learning platform with ROS 2 and simulation tools, enabling students to learn, execute, and analyze robotics experiments in a guided environment.",
     role: "Team lead, 4 members",
@@ -87,20 +87,27 @@ export const projects = [
     status: "done",
     summary:
       "An AI-assisted collaborative travel and expense planning platform that simplifies group trip organisation. It uses the OpenAI API for itinerary assistance, Google Maps and Mapbox for route planning and geographic visualisation, and OpenWeatherMap for destination weather. Built with Python, HTML, CSS, JavaScript and Tailwind CSS, it brings routes, structured itineraries and shared travel expenses into one web platform.",
-    role: "Personal project",
+    role: "Team lead",
     image: null,
     stack: ["Python", "JavaScript", "Tailwind CSS", "OpenAI API", "Google Maps API", "Mapbox", "OpenWeatherMap API"],
     links: { code: null, demo: null, video: null },
   },
   {
     id: "jnnce-bus-app",
-    name: "JNNCE Bus App",
-    status: "in-progress",
+    name: "JNNCE Bus Network",
+    fullName: "Mobile app for the college bus network",
+    status: "done",
     summary:
-      "A bus tracking and timetable app for JNNCE college buses, so students can check routes, stops and timings from their phone instead of waiting without information.",
-    role: "Personal project",
+      "A cross-platform mobile app that shows each student their assigned bus: where it is, when it arrives and what's changed. Students and drivers get their own interfaces, and the college's surveyed 40-bus network is modelled with simulated trips.",
+    role: "Team lead",
+    highlights: [
+      "Live bus location, ETA and alerts for each student's assigned bus",
+      "Separate student and driver interfaces, with driver trip management and QR-based boarding",
+      "Modelled the college's surveyed 40-bus network using simulated trips",
+      "Firebase, live phone GPS and an admin dashboard are planned next",
+    ],
     image: null,
-    stack: ["React", "JavaScript"],
+    stack: ["React Native", "Expo", "Google Maps API", "QR boarding", "Firebase (planned)"],
     links: { code: null, demo: null, video: null },
   },
 ];
@@ -127,7 +134,8 @@ export const skills = [
 export const leadership = [
   {
     title: "Technical team head, FOSSHACK",
-    detail: "Led the technical side of FOSSHACK, a 36-hour hackathon we conducted.",
+    detail:
+      "Led the technical side of FOSSHACK, a 36-hour FOSS United hackathon held at PES ITM, Shivamogga, and helped conduct the event.",
     year: "2025",
     more: null,
     moreHint: null,
@@ -138,6 +146,24 @@ export const leadership = [
     year: "2026",
     more: null,
     moreHint: null,
+  },
+];
+
+// Competition results. `place` shows in the left column; leave `year` null to hide it.
+export const achievements = [
+  {
+    place: "2nd place",
+    title: "Engineering a Way Out",
+    event: "State-level technical symposium, ADITYA 2K25, JNNCE Shivamogga",
+    detail:
+      "Developed an agriculture-focused solution to improve farming methods and crop growth efficiency.",
+  },
+  {
+    place: "2nd place",
+    title: "Hack X hackathon",
+    event: "MYSTERIO, JNNCE Shivamogga",
+    detail:
+      "Built a real-time class notification system with browser and WhatsApp alerts, using React.",
   },
 ];
 
@@ -231,7 +257,7 @@ export const education = [
     degree: "B.E. in Robotics and Artificial Intelligence",
     school: "JNNCE, Shivamogga",
     years: "2023 – 2027",
-    score: "CGPA 7.68",
+    score: "CGPA 7.98",
   },
   {
     degree: "Pre-University",

@@ -8,6 +8,7 @@ import {
   projects,
   skills,
   leadership,
+  achievements,
   certifications,
   channels,
   about,
@@ -194,7 +195,7 @@ export default function App() {
         <section className="section wrap" id="work">
           <div className="section__head">
             <h2>Work</h2>
-            <p>Robotics projects I've built or am building now.</p>
+            <p>What I've built so far — robotics, web and mobile.</p>
           </div>
           <div className="projects">
             {projects.map((p) => (
@@ -247,6 +248,20 @@ export default function App() {
                   <h3>{l.title}</h3>
                   <p>{l.detail}</p>
                   {l.more ? <p>{l.more}</p> : l.moreHint && <Unmapped>{l.moreHint}</Unmapped>}
+                </div>
+              </li>
+            ))}
+          </ul>
+
+          <h2 className="subhead">Achievements</h2>
+          <ul className="entries">
+            {achievements.map((a) => (
+              <li key={a.title} className="entry">
+                <div className="entry__when">{a.year || a.place}</div>
+                <div>
+                  <h3>{a.title}</h3>
+                  {a.event && <p className="entry__event">{a.event}</p>}
+                  <p>{a.detail}</p>
                 </div>
               </li>
             ))}
