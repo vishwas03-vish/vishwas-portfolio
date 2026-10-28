@@ -80,7 +80,7 @@ export const projects = [
     ],
     image: null,
     stack: ["Python", "SQLite", "Google Gemini API", "Pydantic", "PyMuPDF"],
-    links: { code: null, demo: null, video: null },
+    links: { code: "https://github.com/vishwasvishubm/ghost-data-audit-agent", demo: null, video: null },
   },
   {
     id: "ros2-web-terminal",
@@ -154,19 +154,43 @@ export const projects = [
 export const skills = [
   {
     group: "Robotics",
-    items: ["ROS 2 (Jazzy)", "ROS 1 (Noetic)", "URDF", "Gazebo", "RViz", "colcon and ament_cmake"],
+    items: [
+      "ROS 2 (Jazzy)",
+      "ROS 1 (Noetic)",
+      "Gazebo",
+      "RViz",
+      "rosbridge",
+      "SLAM",
+      "LiDAR",
+      "Isaac Sim",
+      "MuJoCo",
+      "URDF",
+      "colcon and ament_cmake",
+    ],
   },
   {
-    group: "Programming",
+    group: "Languages",
     items: ["Python", "C", "C++", "JavaScript", "Bash"],
   },
   {
-    group: "Web and systems",
-    items: ["React and Vite", "Node.js", "WebSockets", "HTML and CSS", "Ubuntu Linux", "Xvfb, x11vnc, noVNC", "Git and GitHub"],
+    group: "AI",
+    items: ["Gemini API", "OpenAI API", "Prompt design", "Structured outputs", "Claude Code", "Machine learning"],
   },
   {
-    group: "AI and 3D",
-    items: ["Machine learning", "Prompt engineering"],
+    group: "Web and mobile",
+    items: ["React", "React Native", "Expo", "FastAPI", "HTML and CSS", "Tailwind CSS", "Vite", "Node.js", "WebSockets"],
+  },
+  {
+    group: "Data",
+    items: ["SQLite", "PostgreSQL", "MySQL", "Pydantic", "PyMuPDF", "Data normalization"],
+  },
+  {
+    group: "Concepts",
+    items: ["Algorithm design", "Rule engines", "Precision, recall and F1"],
+  },
+  {
+    group: "Tools and systems",
+    items: ["Git and GitHub", "Docker", "VS Code", "Ubuntu Linux", "Xvfb, x11vnc, noVNC"],
   },
 ];
 
@@ -308,6 +332,6 @@ export const education = [
     degree: "SSLC",
     school: "S.R.V.K, Shivamogga",
     years: "2021",
-    score: "84.69%",
+    score: "89%",
   },
 ];
