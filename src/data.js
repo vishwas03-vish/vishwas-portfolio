@@ -65,6 +65,24 @@ export const projects = [
     links: { code: null, demo: null, video: null },
   },
   {
+    id: "ghost-data-audit-agent",
+    name: "Ghost Data Audit Agent",
+    fullName: "HackerRank Orchestrate 2026",
+    status: "done",
+    summary:
+      "A privacy-compliance agent built in a 24-hour hackathon. It verifies that customer data was actually deleted across databases, replicas, logs, PDFs and screenshots, and produces an evidence-backed remediation plan for each request.",
+    role: "24-hour hackathon",
+    highlights: [
+      "Evidence-backed remediation plans for 518 deletion requests",
+      "Hybrid pipeline: deterministic Python for identity resolution, replica state and policy rules, with Gemini used only for screenshot transcription and multilingual intent classification",
+      "Normalized 94 evidence files in 10 formats, using bipartite matching to attribute deleted records without guessing ownership",
+      "100% status accuracy and 96.2% step-level F1 (100% precision) across 20 adversarial tests, at about $0.08 per run",
+    ],
+    image: null,
+    stack: ["Python", "SQLite", "Google Gemini API", "Pydantic", "PyMuPDF"],
+    links: { code: null, demo: null, video: null },
+  },
+  {
     id: "ros2-web-terminal",
     name: "ROS 2 Web Terminal",
     status: "done",
@@ -175,14 +193,14 @@ export const achievements = [
   {
     place: "2nd place",
     title: "Engineering a Way Out",
-    event: "State-level technical symposium, ADITYA 2K25, JNNCE Shivamogga",
+    event: "State-level technical symposium, Aditya 2K24, JNNCE Shivamogga",
     detail:
       "Developed an agriculture-focused solution to improve farming methods and crop growth efficiency.",
   },
   {
     place: "2nd place",
-    title: "Hack X hackathon",
-    event: "MYSTERIO, JNNCE Shivamogga",
+    title: "Hack-X hackathon",
+    event: "MYSTERIO 6.0, JNNCE Shivamogga",
     detail:
       "Built a real-time class notification system with browser and WhatsApp alerts, using React.",
   },
