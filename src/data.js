@@ -80,7 +80,7 @@ export const projects = [
     ],
     image: null,
     stack: ["Python", "Kafka", "REST APIs", "pandas", "Streamlit"],
-    links: { code: null, demo: null, video: null },
+    links: { code: "https://github.com/vishwasvishubm/autonomous-trading-bot", demo: null, video: null },
   },
   {
     id: "ghost-data-audit-agent",
