@@ -233,6 +233,13 @@ export const leadership = [
 // Competition results. `place` shows in the left column; leave `year` null to hide it.
 export const achievements = [
   {
+    place: "2nd prize",
+    title: "MANTHAN 2026 hackathon",
+    event: "Team Tit4Tat",
+    detail:
+      "Built an autonomous, explainable trading bot that trades from a live Kafka price and news stream. It returned +107.9% vs the market's +81.5% on 40 unseen stocks in the official pre-flight test.",
+  },
+  {
     place: "2nd place",
     title: "Engineering a Way Out",
     event: "State-level technical symposium, Aditya 2K24, JNNCE Shivamogga",
