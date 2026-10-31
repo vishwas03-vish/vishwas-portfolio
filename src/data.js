@@ -65,6 +65,24 @@ export const projects = [
     links: { code: null, demo: null, video: null },
   },
   {
+    id: "autonomous-trading-bot",
+    name: "Autonomous Trading Bot",
+    fullName: "MANTHAN 2026 hackathon, 2nd prize",
+    status: "done",
+    summary:
+      "An autonomous, explainable trading bot that reads a live Kafka market stream of prices and news, decides once per simulated day in about 40 ms of compute, and places its own orders through a REST gateway.",
+    role: "Hackathon team, Tit4Tat",
+    highlights: [
+      "Volume-flow strategy (buying vs selling pressure) with Indian capital-gains tax planning: tax-free gain harvesting and tax-loss harvesting",
+      "Returned +107.9% vs the market's +81.5% over 1,008 trading days on 40 unseen stocks in the official pre-flight test",
+      "Validated 30+ strategy variants across 32 overlapping 500-day backtest windows, with a train/test split and an independent accounting audit that matched the books to the paisa",
+      "Rate-limited API client, Kafka auto-reconnect watchdog, safe order timeouts, crash recovery and 96 automated tests; the pre-flight run made 4,772 API requests with zero errors",
+    ],
+    image: null,
+    stack: ["Python", "Kafka", "REST APIs", "pandas", "Streamlit"],
+    links: { code: null, demo: null, video: null },
+  },
+  {
     id: "ghost-data-audit-agent",
     name: "Ghost Data Audit Agent",
     fullName: "HackerRank Orchestrate 2026",
@@ -178,11 +196,11 @@ export const skills = [
   },
   {
     group: "Web and mobile",
-    items: ["React", "React Native", "Expo", "FastAPI", "HTML and CSS", "Tailwind CSS", "Vite", "Node.js", "WebSockets"],
+    items: ["React", "React Native", "Expo", "FastAPI", "REST APIs", "HTML and CSS", "Tailwind CSS", "Vite", "Node.js", "WebSockets"],
   },
   {
     group: "Data",
-    items: ["SQLite", "PostgreSQL", "MySQL", "Pydantic", "PyMuPDF", "Data normalization"],
+    items: ["pandas", "SQLite", "PostgreSQL", "MySQL", "Pydantic", "PyMuPDF", "Data normalization"],
   },
   {
     group: "Concepts",
@@ -190,7 +208,7 @@ export const skills = [
   },
   {
     group: "Tools and systems",
-    items: ["Git and GitHub", "Docker", "VS Code", "Ubuntu Linux", "Xvfb, x11vnc, noVNC"],
+    items: ["Git and GitHub", "Docker", "Kafka", "Streamlit", "VS Code", "Ubuntu Linux", "Xvfb, x11vnc, noVNC"],
   },
 ];
 
